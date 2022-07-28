@@ -613,6 +613,8 @@ describe('TodoMVC', function () {
         cy.contains('Completed')
         .click()
         .should('have.class', 'selected')
+
+        cy.visit("https://aedo-data-foundation-fd-stg.azurefd.net/")
       })
     })
   })
